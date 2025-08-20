@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doug Kim | Inclusive AI Design Leader Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Doug Kim</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>AI Design Leader</h1>
+                <h2>Creating the interaction models and designs that define the new age of AI</h2>
+                <p>Design leader, speaker and writer. Inclusive team builder. Expert in AI interactions</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-gallery">
+                        <img src="images/doug-headshot.jpg" alt="Doug Kim - Professional Headshot" class="main-image">
+                        <div class="secondary-image">
+                            <img src="images/doug-clippy.jpg" alt="Doug Kim with Clippy" class="secondary-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Doug Kim</h3>
+                    <p>I'm an Enterprise AI design and product leader, skilled in building effective, highly collaborative teams focused on designing for the era of generative AI. I bring inclusive design practices to bridge the gap between complex AI technologies and intuitive user experiences.</p>
+                    <p>I founded and lead a multidisciplinary team that incorporates the principles of inclusive design with pioneering practices in research, product management, content design, and product design. I've played key roles in lasting innovations like the Microsoft Voice Principles, Inclusive Design at Microsoft, search-engine-based and AI-based help for Windows 10, Xbox, Microsoft 365, and now Copilot in Azure.</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>Inclusive Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 98%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>AI UX Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Content Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Team Leadership</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Product Management</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Portfolio</h2>
+                <div class="separator"></div>
+                <p>A selection of my most impactful AI-driven design projects</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-ux">AI UX</button>
+                <button class="filter-btn" data-filter="chatbots">Chatbots</button>
+                <button class="filter-btn" data-filter="ml-interfaces">ML Interfaces</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ai-ux">
+                    <div class="portfolio-img">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="videos/MicrosoftCopilot-in-Azure_ARG-Demo_with-BGM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Copilot in Azure - ARG Demo</h3>
+                        <p>A demonstration of Microsoft Copilot in Azure Resource Graph (ARG) capabilities</p>
+                        <a href="copilot-in-azure.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai-ux">
+                    <div class="portfolio-img">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="videos/MicrosoftCopilot-in-Azure_Cost-Demo_with-BMG.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Copilot in Azure - Cost Demo</h3>
+                        <p>A demonstration of cost optimization features in Microsoft Copilot for Azure</p>
+                        <a href="copilot-in-azure.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai-ux">
+                    <div class="portfolio-img">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="videos/MicrosoftCopilot-in-Azure_LowCostVM-Demo_with-BMG.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Copilot in Azure - Low Cost VM Demo</h3>
+                        <p>A demonstration of low-cost virtual machine recommendations using Microsoft Copilot in Azure</p>
+                        <a href="copilot-in-azure.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai-ux">
+                    <div class="portfolio-img">
+                        <iframe src="images/placeholder.html#inclusive-ai" frameborder="0" scrolling="no" style="width: 100%; height: 100%; object-fit: cover; background: linear-gradient(135deg, #00a4bd, #00d4ff);"></iframe>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>In Pursuit of Inclusive AI</h3>
+                        <p>A primer on understanding and addressing bias in artificial intelligence systems</p>
+                        <a href="inclusive-design.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ml-interfaces">
+                    <div class="portfolio-img">
+                        <iframe src="images/placeholder.html#cognition" frameborder="0" scrolling="no" style="width: 100%; height: 100%; object-fit: cover; background: linear-gradient(135deg, #00b894, #55efc4);"></iframe>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Inclusive Design for Cognition</h3>
+                        <p>Building products that account for the amazing diversity of human cognition</p>
+                        <a href="inclusive-design.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="chatbots">
+                    <div class="portfolio-img">
+                        <iframe src="images/placeholder.html#respecting-focus" frameborder="0" scrolling="no" style="width: 100%; height: 100%; object-fit: cover; background: linear-gradient(135deg, #6c5ce7, #a29bfe);"></iframe>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Respecting Focus</h3>
+                        <p>A behavior guide for intelligent systems that respects user attention and focus</p>
+                        <a href="inclusive-design.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <div class="separator"></div>
+                <p>My professional journey in AI and design</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Principal Design Manager, Azure Intelligence and Inclusive Design</h3>
+                        <h4>Microsoft</h4>
+                        <p class="timeline-date">Present</p>
+                        <p>Product design leader for Microsoft Copilot in Azure. Co-lead design, engineering, and product management of Azure's generative AI assistant. Created the team that leads design patterns, content design and research practices for AI in Azure. Built the content design practice for Azure, focusing on reducing complexity through research-backed terminology and simplified flows.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Content Design Manager</h3>
+                        <h4>Microsoft Windows + Devices</h4>
+                        <p class="timeline-date">Previous</p>
+                        <p>Leader of the voice and UI text strategy for Microsoft 365 IT Admin Center. Led content strategy for Windows 10 search engine-based help and Virtual Support Agent. Managed content for the Inclusive Design toolkit, and wrote the Inclusive Design Principles, which won the 2017 IXDA Best of Empowering category award.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Managing Editor</h3>
+                        <h4>Microsoft Office 365</h4>
+                        <p class="timeline-date">Previous</p>
+                        <p>Key architect of the Microsoft Voice principles, which are referenced by every writer, marketer, and content designer across Microsoft today. Created and implemented standards for assistance video as manager of new video services team. Founder of blogs.office.com, now the Microsoft 365 Blog.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Arts and Entertainment Editor</h3>
+                        <h4>The Seattle Times</h4>
+                        <p class="timeline-date">Previous</p>
+                        <p>Completely revamped all areas of coverage by developing a web-first approach. Led and contributed to groundbreaking arts-related investigations. Created industry-first digital initiatives, including the first online entertainment listing database and the first newspaper-sponsored digital moviemaking contest.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>John S. Knight Journalism Fellow</h3>
+                        <h4>Stanford University</h4>
+                        <p class="timeline-date">Previous</p>
+                        <p>Developed projects relating to design, engineering and innovation. Study areas included design thinking at the Stanford d.School, trend forecasting, ethnographic user research, team-based creativity development, and new venture creation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Publications & Keynotes</h2>
+                <div class="separator"></div>
+                <p>My contributions to the field of AI design and inclusive technology</p>
+            </div>
+            <div class="publications-content">
+                <div class="publications-column">
+                    <h3>Articles & Research</h3>
+                    <div class="publication-item">
+                        <h4>Goodbye User Journeys</h4>
+                        <p class="publication-date">April 2025</p>
+                        <p>An exploration of new approaches to user experience design in the age of AI.</p>
+                        <a href="https://www.linkedin.com/pulse/goodbye-user-journeys-doug-kim-ennnc/" target="_blank" class="publication-link">Read Article</a>
+                    </div>
+                    <div class="publication-item">
+                        <h4>Kill Your Personas: How persona spectrums champion real user needs</h4>
+                        <p class="publication-date">November 2018</p>
+                        <p>Co-authored with M. Price, this article challenges traditional persona approaches and introduces persona spectrums.</p>
+                        <a href="https://medium.com/microsoft-design/kill-your-personas-1c332d4908cc" target="_blank" class="publication-link">Read Article</a>
+                    </div>
+                    <div class="publication-item">
+                        <h4>The Problem with Interrupti...</h4>
+                        <p class="publication-date">April 2018</p>
+                        <p>An examination of how interruptions affect user experience and cognitive load.</p>
+                        <a href="https://www.linkedin.com/pulse/problem-interrupti-doug-kim/" target="_blank" class="publication-link">Read Article</a>
+                    </div>
+                    <div class="publication-item">
+                        <h4>Respecting Focus: A Behavior Guide for Intelligent Systems</h4>
+                        <p class="publication-date">April 2018</p>
+                        <p>Co-authored guide for designing AI systems that respect user attention and focus.</p>
+                        <a href="https://inclusive.microsoft.design/tools-and-activities/RespectingFocus.pdf" target="_blank" class="publication-link">Read Guide</a>
+                    </div>
+                </div>
+                <div class="publications-column">
+                    <h3>Keynotes & Podcasts</h3>
+                    <div class="publication-item">
+                        <h4>Focus Forward | How Microsoft Is Supporting Neurodiversity Through Inclusive Design</h4>
+                        <p class="publication-date">December 2023</p>
+                        <p>Podcast discussing Microsoft's approach to neurodiversity in design.</p>
+                        <a href="https://open.spotify.com/show/1lehV74qcVQnnFu9aTLRfF" target="_blank" class="publication-link">Listen to Podcast</a>
+                    </div>
+                    <div class="publication-item">
+                        <h4>The Need for Inclusive Design</h4>
+                        <p class="publication-date">July 2021</p>
+                        <p>Webinar on the importance of inclusive design in modern technology.</p>
+                        <a href="https://www.brighttalk.com/webcast/9273/441637" target="_blank" class="publication-link">Watch Webinar</a>
+                    </div>
+                    <div class="publication-item">
+                        <h4>Notable Keynote Presentations</h4>
+                        <ul class="keynote-list">
+                            <li>Technical Communication New Zealand Conference (2019)</li>
+                            <li>ITX Conference, Wellington, NZ (2018)</li>
+                            <li>InfoWorld, Menlo Park, CA (2017)</li>
+                            <li>Technical Communication New Zealand Conference (2017)</li>
+                            <li>Technical Communication United Kingdom Conference (2014)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="separator"></div>
+                <p>Interested in working together? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>doug@doug.kim</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>206.455.5446</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Mercer Island, WA</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/doug-kim" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Doug Kim | Principal Design Manager, Azure Intelligence and Inclusive Design</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check authentication before loading content
+        if (sessionStorage.getItem('portfolioAccess') !== 'granted') {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
