@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-shirt',
             prices: [
-                { retailer: 'Nike.com', price: 55, url: 'https://www.nike.com/w/mens-golf-tops-shirts-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/f/nike-golf-shirts' },
-                { retailer: 'Golf Galaxy', price: 52, url: 'https://www.golfgalaxy.com/f/nike-golf-polos' },
+                { retailer: 'Nike.com', price: 55, url: 'https://www.nike.com/w?q=nike+golf+polo+shirts' },
+                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+shirts' },
+                { retailer: 'Golf Galaxy', price: 52, url: 'https://www.golfgalaxy.com/search?searchTerm=nike+golf+polos' },
                 { retailer: 'Amazon', price: 48, url: 'https://www.amazon.com/s?k=nike+dri-fit+victory+golf+polo' }
             ]
         },
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a3a5c, #2d5016)',
             icon: 'fa-shirt',
             prices: [
-                { retailer: 'Peter Millar', price: 130, url: 'https://www.petermillar.com/collections/mens-polos/' },
+                { retailer: 'Peter Millar', price: 130, url: 'https://www.petermillar.com/search?q=crown+crafted+polo' },
                 { retailer: 'Nordstrom', price: 128, url: 'https://www.nordstrom.com/sr?keyword=peter+millar+golf+polo' },
-                { retailer: 'Golf Galaxy', price: 130, url: 'https://www.golfgalaxy.com/f/peter-millar-polos' }
+                { retailer: 'Golf Galaxy', price: 130, url: 'https://www.golfgalaxy.com/search?searchTerm=peter+millar+polos' }
             ]
         },
         {
@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-shirt',
             prices: [
                 { retailer: 'Under Armour', price: 70, url: 'https://www.underarmour.com/en-us/c/mens/golf/' },
-                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/f/under-armour-golf-shirts' },
+                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/search?searchTerm=under+armour+golf+shirts' },
                 { retailer: 'Amazon', price: 55, url: 'https://www.amazon.com/s?k=under+armour+playoff+3.0+polo' },
-                { retailer: 'Golf Galaxy', price: 65, url: 'https://www.golfgalaxy.com/f/under-armour-golf-polos' }
+                { retailer: 'Golf Galaxy', price: 65, url: 'https://www.golfgalaxy.com/search?searchTerm=under+armour+golf+polos' }
             ]
         },
         {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Puma.com', price: 65, url: 'https://us.puma.com/us/en/collections/golf' },
                 { retailer: 'Amazon', price: 45, url: 'https://www.amazon.com/s?k=puma+mattr+golf+polo' },
-                { retailer: 'Golf Galaxy', price: 55, url: 'https://www.golfgalaxy.com/f/puma-golf-polos' }
+                { retailer: 'Golf Galaxy', price: 55, url: 'https://www.golfgalaxy.com/search?searchTerm=puma+golf+polos' }
             ]
         },
         {
@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-shirt',
             prices: [
-                { retailer: 'Callaway Golf', price: 60, url: 'https://www.callawaygolf.com/golf-apparel/mens/polos-tops/' },
+                { retailer: 'Callaway Golf', price: 60, url: 'https://www.callawaygolf.com/search?q=swing+tech+polo' },
                 { retailer: 'Amazon', price: 42, url: 'https://www.amazon.com/s?k=callaway+swing+tech+polo' },
-                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/f/callaway-golf-shirts' }
+                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+shirts' }
             ]
         },
         {
@@ -101,8 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'adidas.com', price: 75, url: 'https://www.adidas.com/us/men-golf-shirts' },
                 { retailer: 'Amazon', price: 58, url: 'https://www.amazon.com/s?k=adidas+ultimate365+golf+polo' },
-                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/f/adidas-golf-shirts' },
-                { retailer: 'Golf Galaxy', price: 68, url: 'https://www.golfgalaxy.com/f/adidas-golf-polos' }
+                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/search?searchTerm=adidas+golf+shirts' },
+                { retailer: 'Golf Galaxy', price: 68, url: 'https://www.golfgalaxy.com/search?searchTerm=adidas+golf+polos' }
             ]
         },
         {
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'TravisMathew', price: 95, url: 'https://www.travismathew.com/collections/polos' },
                 { retailer: 'Nordstrom', price: 95, url: 'https://www.nordstrom.com/sr?keyword=travismathew+polo' },
-                { retailer: 'Golf Galaxy', price: 90, url: 'https://www.golfgalaxy.com/f/travismathew-polos' }
+                { retailer: 'Golf Galaxy', price: 90, url: 'https://www.golfgalaxy.com/search?searchTerm=travismathew+polos' }
             ]
         },
         {
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-user-tie',
             prices: [
-                { retailer: 'Nike.com', price: 90, url: 'https://www.nike.com/w/mens-golf-pants-tights-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 85, url: 'https://www.dickssportinggoods.com/f/nike-golf-pants' },
+                { retailer: 'Nike.com', price: 90, url: 'https://www.nike.com/w?q=nike+golf+pants' },
+                { retailer: 'Dick\'s Sporting Goods', price: 85, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+pants' },
                 { retailer: 'Amazon', price: 78, url: 'https://www.amazon.com/s?k=nike+dri-fit+golf+pants' }
             ]
         },
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a3a5c, #2d5016)',
             icon: 'fa-user-tie',
             prices: [
-                { retailer: 'Peter Millar', price: 165, url: 'https://www.petermillar.com/collections/mens-pants/' },
+                { retailer: 'Peter Millar', price: 165, url: 'https://www.petermillar.com/search?q=crown+sport+pant' },
                 { retailer: 'Nordstrom', price: 160, url: 'https://www.nordstrom.com/sr?keyword=peter+millar+golf+pants' }
             ]
         },
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'adidas.com', price: 85, url: 'https://www.adidas.com/us/men-golf-pants' },
                 { retailer: 'Amazon', price: 62, url: 'https://www.amazon.com/s?k=adidas+ultimate365+golf+pants' },
-                { retailer: 'Dick\'s Sporting Goods', price: 75, url: 'https://www.dickssportinggoods.com/f/adidas-golf-pants' }
+                { retailer: 'Dick\'s Sporting Goods', price: 75, url: 'https://www.dickssportinggoods.com/search?searchTerm=adidas+golf+pants' }
             ]
         },
         {
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Under Armour', price: 85, url: 'https://www.underarmour.com/en-us/c/mens/golf/' },
                 { retailer: 'Amazon', price: 68, url: 'https://www.amazon.com/s?k=under+armour+drive+golf+pants' },
-                { retailer: 'Dick\'s Sporting Goods', price: 75, url: 'https://www.dickssportinggoods.com/f/under-armour-golf-pants' }
+                { retailer: 'Dick\'s Sporting Goods', price: 75, url: 'https://www.dickssportinggoods.com/search?searchTerm=under+armour+golf+pants' }
             ]
         },
 
@@ -205,8 +205,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-scissors',
             prices: [
-                { retailer: 'Nike.com', price: 70, url: 'https://www.nike.com/w/mens-golf-shorts-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/f/nike-golf-shorts' },
+                { retailer: 'Nike.com', price: 70, url: 'https://www.nike.com/w?q=nike+golf+shorts' },
+                { retailer: 'Dick\'s Sporting Goods', price: 65, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+shorts' },
                 { retailer: 'Amazon', price: 58, url: 'https://www.amazon.com/s?k=nike+dri-fit+golf+shorts' }
             ]
         },
@@ -218,9 +218,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-scissors',
             prices: [
-                { retailer: 'Callaway Golf', price: 50, url: 'https://www.callawaygolf.com/golf-apparel/mens/shorts/' },
+                { retailer: 'Callaway Golf', price: 50, url: 'https://www.callawaygolf.com/search?q=everplay+shorts' },
                 { retailer: 'Amazon', price: 35, url: 'https://www.amazon.com/s?k=callaway+everplay+golf+shorts' },
-                { retailer: 'Dick\'s Sporting Goods', price: 40, url: 'https://www.dickssportinggoods.com/f/callaway-golf-shorts' }
+                { retailer: 'Dick\'s Sporting Goods', price: 40, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+shorts' }
             ]
         },
         {
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'TravisMathew', price: 90, url: 'https://www.travismathew.com/collections/shorts' },
                 { retailer: 'Nordstrom', price: 90, url: 'https://www.nordstrom.com/sr?keyword=travismathew+golf+shorts' },
-                { retailer: 'Golf Galaxy', price: 85, url: 'https://www.golfgalaxy.com/f/travismathew-shorts' }
+                { retailer: 'Golf Galaxy', price: 85, url: 'https://www.golfgalaxy.com/search?searchTerm=travismathew+shorts' }
             ]
         },
         {
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Under Armour', price: 65, url: 'https://www.underarmour.com/en-us/c/mens/golf/' },
                 { retailer: 'Amazon', price: 48, url: 'https://www.amazon.com/s?k=under+armour+drive+golf+shorts' },
-                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/f/under-armour-golf-shorts' }
+                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/search?searchTerm=under+armour+golf+shorts' }
             ]
         },
         {
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'adidas.com', price: 65, url: 'https://www.adidas.com/us/men-golf-shorts' },
                 { retailer: 'Amazon', price: 45, url: 'https://www.amazon.com/s?k=adidas+ultimate365+golf+shorts' },
-                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/f/adidas-golf-shorts' }
+                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/search?searchTerm=adidas+golf+shorts' }
             ]
         },
 
@@ -272,9 +272,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-vest-patches',
             prices: [
-                { retailer: 'Nike.com', price: 145, url: 'https://www.nike.com/w/mens-golf-jackets-vests-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 140, url: 'https://www.dickssportinggoods.com/f/nike-golf-jackets' },
-                { retailer: 'Golf Galaxy', price: 142, url: 'https://www.golfgalaxy.com/f/nike-golf-outerwear' }
+                { retailer: 'Nike.com', price: 145, url: 'https://www.nike.com/w?q=nike+golf+jacket' },
+                { retailer: 'Dick\'s Sporting Goods', price: 140, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+jackets' },
+                { retailer: 'Golf Galaxy', price: 142, url: 'https://www.golfgalaxy.com/search?searchTerm=nike+golf+outerwear' }
             ]
         },
         {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a3a5c, #2d5016)',
             icon: 'fa-vest-patches',
             prices: [
-                { retailer: 'Peter Millar', price: 198, url: 'https://www.petermillar.com/collections/mens-outerwear/' },
+                { retailer: 'Peter Millar', price: 198, url: 'https://www.petermillar.com/search?q=hyperlight+fuse+vest' },
                 { retailer: 'Nordstrom', price: 198, url: 'https://www.nordstrom.com/sr?keyword=peter+millar+golf+vest' }
             ]
         },
@@ -297,8 +297,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1b2838, #2a4858)',
             icon: 'fa-vest-patches',
             prices: [
-                { retailer: 'FootJoy', price: 165, url: 'https://www.footjoy.com/golf-apparel/mens/outerwear/' },
-                { retailer: 'Golf Galaxy', price: 155, url: 'https://www.golfgalaxy.com/f/footjoy-rain-gear' },
+                { retailer: 'FootJoy', price: 165, url: 'https://www.footjoy.com/search?q=hydrolite+rain+jacket' },
+                { retailer: 'Golf Galaxy', price: 155, url: 'https://www.golfgalaxy.com/search?searchTerm=footjoy+rain+gear' },
                 { retailer: 'Amazon', price: 140, url: 'https://www.amazon.com/s?k=footjoy+hydrolite+rain+jacket' }
             ]
         },
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Under Armour', price: 85, url: 'https://www.underarmour.com/en-us/c/mens/golf/' },
                 { retailer: 'Amazon', price: 72, url: 'https://www.amazon.com/s?k=under+armour+storm+golf+midlayer' },
-                { retailer: 'Dick\'s Sporting Goods', price: 80, url: 'https://www.dickssportinggoods.com/f/under-armour-golf-outerwear' }
+                { retailer: 'Dick\'s Sporting Goods', price: 80, url: 'https://www.dickssportinggoods.com/search?searchTerm=under+armour+golf+outerwear' }
             ]
         },
 
@@ -325,9 +325,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-shoe-prints',
             prices: [
-                { retailer: 'Nike.com', price: 180, url: 'https://www.nike.com/w/mens-golf-shoes-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 175, url: 'https://www.dickssportinggoods.com/f/nike-golf-shoes' },
-                { retailer: 'Golf Galaxy', price: 180, url: 'https://www.golfgalaxy.com/f/nike-golf-shoes' }
+                { retailer: 'Nike.com', price: 180, url: 'https://www.nike.com/w?q=nike+golf+shoes' },
+                { retailer: 'Dick\'s Sporting Goods', price: 175, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+shoes' },
+                { retailer: 'Golf Galaxy', price: 180, url: 'https://www.golfgalaxy.com/search?searchTerm=nike+golf+shoes' }
             ]
         },
         {
@@ -339,9 +339,9 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-shoe-prints',
             prices: [
                 { retailer: 'FootJoy', price: 170, url: 'https://www.footjoy.com/golf-shoes/mens/' },
-                { retailer: 'Golf Galaxy', price: 165, url: 'https://www.golfgalaxy.com/f/footjoy-pro-sl' },
+                { retailer: 'Golf Galaxy', price: 165, url: 'https://www.golfgalaxy.com/search?searchTerm=footjoy+pro+sl' },
                 { retailer: 'Amazon', price: 152, url: 'https://www.amazon.com/s?k=footjoy+pro+sl+golf+shoes' },
-                { retailer: 'Dick\'s Sporting Goods', price: 160, url: 'https://www.dickssportinggoods.com/f/footjoy-golf-shoes' }
+                { retailer: 'Dick\'s Sporting Goods', price: 160, url: 'https://www.dickssportinggoods.com/search?searchTerm=footjoy+golf+shoes' }
             ]
         },
         {
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'adidas.com', price: 200, url: 'https://www.adidas.com/us/men-golf-shoes' },
                 { retailer: 'Amazon', price: 155, url: 'https://www.amazon.com/s?k=adidas+tour360+golf+shoes' },
-                { retailer: 'Golf Galaxy', price: 180, url: 'https://www.golfgalaxy.com/f/adidas-golf-shoes' }
+                { retailer: 'Golf Galaxy', price: 180, url: 'https://www.golfgalaxy.com/search?searchTerm=adidas+golf+shoes' }
             ]
         },
         {
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Puma.com', price: 130, url: 'https://us.puma.com/us/en/collections/golf' },
                 { retailer: 'Amazon', price: 95, url: 'https://www.amazon.com/s?k=puma+ignite+elevate+golf+shoes' },
-                { retailer: 'Dick\'s Sporting Goods', price: 110, url: 'https://www.dickssportinggoods.com/f/puma-golf-shoes' }
+                { retailer: 'Dick\'s Sporting Goods', price: 110, url: 'https://www.dickssportinggoods.com/search?searchTerm=puma+golf+shoes' }
             ]
         },
         {
@@ -378,8 +378,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #2d3436, #636e72)',
             icon: 'fa-shoe-prints',
             prices: [
-                { retailer: 'Ecco', price: 220, url: 'https://us.ecco.com/men/sport/golf/' },
-                { retailer: 'Golf Galaxy', price: 215, url: 'https://www.golfgalaxy.com/f/ecco-golf-shoes' },
+                { retailer: 'Ecco', price: 220, url: 'https://us.ecco.com/search?q=biom+c4+golf' },
+                { retailer: 'Golf Galaxy', price: 215, url: 'https://www.golfgalaxy.com/search?searchTerm=ecco+golf+shoes' },
                 { retailer: 'Amazon', price: 198, url: 'https://www.amazon.com/s?k=ecco+biom+c4+golf+shoes' }
             ]
         },
@@ -393,8 +393,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-hat-cowboy',
             prices: [
-                { retailer: 'Nike.com', price: 30, url: 'https://www.nike.com/w/mens-golf-hats-headbands-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 28, url: 'https://www.dickssportinggoods.com/f/nike-golf-hats' },
+                { retailer: 'Nike.com', price: 30, url: 'https://www.nike.com/w?q=nike+golf+hat' },
+                { retailer: 'Dick\'s Sporting Goods', price: 28, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+hats' },
                 { retailer: 'Amazon', price: 25, url: 'https://www.amazon.com/s?k=nike+aerobill+golf+hat' }
             ]
         },
@@ -406,8 +406,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1b2838, #2a4858)',
             icon: 'fa-hat-cowboy',
             prices: [
-                { retailer: 'Titleist', price: 32, url: 'https://www.titleist.com/golf-gear/golf-headwear' },
-                { retailer: 'Golf Galaxy', price: 30, url: 'https://www.golfgalaxy.com/f/titleist-golf-hats' },
+                { retailer: 'Titleist', price: 32, url: 'https://www.titleist.com/search?q=tour+performance+hat' },
+                { retailer: 'Golf Galaxy', price: 30, url: 'https://www.golfgalaxy.com/search?searchTerm=titleist+golf+hats' },
                 { retailer: 'Amazon', price: 26, url: 'https://www.amazon.com/s?k=titleist+tour+performance+golf+hat' }
             ]
         },
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Puma.com', price: 28, url: 'https://us.puma.com/us/en/collections/golf' },
                 { retailer: 'Amazon', price: 18, url: 'https://www.amazon.com/s?k=puma+p+snapback+golf+hat' },
-                { retailer: 'Dick\'s Sporting Goods', price: 22, url: 'https://www.dickssportinggoods.com/f/puma-golf-hats' }
+                { retailer: 'Dick\'s Sporting Goods', price: 22, url: 'https://www.dickssportinggoods.com/search?searchTerm=puma+golf+hats' }
             ]
         },
         {
@@ -432,9 +432,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-hat-cowboy',
             prices: [
-                { retailer: 'Callaway Golf', price: 26, url: 'https://www.callawaygolf.com/golf-apparel/headwear/' },
+                { retailer: 'Callaway Golf', price: 26, url: 'https://www.callawaygolf.com/search?q=performance+pro+hat' },
                 { retailer: 'Amazon', price: 18, url: 'https://www.amazon.com/s?k=callaway+performance+pro+golf+hat' },
-                { retailer: 'Dick\'s Sporting Goods', price: 22, url: 'https://www.dickssportinggoods.com/f/callaway-golf-hats' }
+                { retailer: 'Dick\'s Sporting Goods', price: 22, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+hats' }
             ]
         },
 
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prices: [
                 { retailer: 'Under Armour', price: 60, url: 'https://www.underarmour.com/en-us/c/mens/golf/' },
                 { retailer: 'Amazon', price: 48, url: 'https://www.amazon.com/s?k=under+armour+coldgear+golf+base+layer' },
-                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/f/under-armour-base-layers' }
+                { retailer: 'Dick\'s Sporting Goods', price: 55, url: 'https://www.dickssportinggoods.com/search?searchTerm=under+armour+base+layers' }
             ]
         },
         {
@@ -460,8 +460,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-layer-group',
             prices: [
-                { retailer: 'Nike.com', price: 55, url: 'https://www.nike.com/w/mens-golf-long-sleeve-shirts-9oaacznik1' },
-                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/f/nike-golf-base-layers' },
+                { retailer: 'Nike.com', price: 55, url: 'https://www.nike.com/w?q=nike+golf+long+sleeve' },
+                { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+base+layers' },
                 { retailer: 'Amazon', price: 45, url: 'https://www.amazon.com/s?k=nike+dri-fit+uv+golf+long+sleeve' }
             ]
         },
@@ -473,8 +473,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1b2838, #2a4858)',
             icon: 'fa-layer-group',
             prices: [
-                { retailer: 'FootJoy', price: 85, url: 'https://www.footjoy.com/golf-apparel/mens/mid-layers/' },
-                { retailer: 'Golf Galaxy', price: 80, url: 'https://www.golfgalaxy.com/f/footjoy-base-layers' },
+                { retailer: 'FootJoy', price: 85, url: 'https://www.footjoy.com/search?q=thermoseries+base+layer' },
+                { retailer: 'Golf Galaxy', price: 80, url: 'https://www.golfgalaxy.com/search?searchTerm=footjoy+base+layers' },
                 { retailer: 'Amazon', price: 72, url: 'https://www.amazon.com/s?k=footjoy+thermoseries+base+layer' }
             ]
         },
@@ -489,9 +489,9 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-mitten',
             prices: [
                 { retailer: 'FootJoy', price: 22, url: 'https://www.footjoy.com/golf-gloves/' },
-                { retailer: 'Golf Galaxy', price: 20, url: 'https://www.golfgalaxy.com/f/footjoy-golf-gloves' },
+                { retailer: 'Golf Galaxy', price: 20, url: 'https://www.golfgalaxy.com/search?searchTerm=footjoy+golf+gloves' },
                 { retailer: 'Amazon', price: 17, url: 'https://www.amazon.com/s?k=footjoy+stasof+golf+glove' },
-                { retailer: 'Dick\'s Sporting Goods', price: 20, url: 'https://www.dickssportinggoods.com/f/footjoy-golf-gloves' }
+                { retailer: 'Dick\'s Sporting Goods', price: 20, url: 'https://www.dickssportinggoods.com/search?searchTerm=footjoy+golf+gloves' }
             ]
         },
         {
@@ -502,9 +502,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #16213e)',
             icon: 'fa-mitten',
             prices: [
-                { retailer: 'Nike.com', price: 30, url: 'https://www.nike.com/w/mens-golf-accessories-9oaacznik1' },
+                { retailer: 'Nike.com', price: 30, url: 'https://www.nike.com/w?q=nike+golf+belt' },
                 { retailer: 'Amazon', price: 25, url: 'https://www.amazon.com/s?k=nike+essentials+golf+belt' },
-                { retailer: 'Dick\'s Sporting Goods', price: 28, url: 'https://www.dickssportinggoods.com/f/nike-golf-belts' }
+                { retailer: 'Dick\'s Sporting Goods', price: 28, url: 'https://www.dickssportinggoods.com/search?searchTerm=nike+golf+belts' }
             ]
         },
         {
@@ -515,9 +515,9 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #2d2d2d, #4a4a4a)',
             icon: 'fa-mitten',
             prices: [
-                { retailer: 'Stance', price: 40, url: 'https://www.stance.com/golf/' },
+                { retailer: 'Stance', price: 40, url: 'https://www.stance.com/search?q=versa+tab+golf+socks' },
                 { retailer: 'Amazon', price: 34, url: 'https://www.amazon.com/s?k=stance+golf+socks' },
-                { retailer: 'Golf Galaxy', price: 38, url: 'https://www.golfgalaxy.com/f/stance-golf-socks' }
+                { retailer: 'Golf Galaxy', price: 38, url: 'https://www.golfgalaxy.com/search?searchTerm=stance+golf+socks' }
             ]
         },
         {
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a3a5c, #2d5016)',
             icon: 'fa-mitten',
             prices: [
-                { retailer: 'Peter Millar', price: 128, url: 'https://www.petermillar.com/collections/mens-accessories/' },
+                { retailer: 'Peter Millar', price: 128, url: 'https://www.petermillar.com/search?q=crown+leather+belt' },
                 { retailer: 'Nordstrom', price: 128, url: 'https://www.nordstrom.com/sr?keyword=peter+millar+golf+belt' }
             ]
         }
@@ -974,7 +974,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             return `<div class="product-card">
                 <div class="product-image" style="background:${product.gradient}">
-                    <i class="fas ${product.icon}" style="opacity:0.3"></i>
+                    <span class="brand-initial">${escapeHtml(product.brand.substring(0, 2).toUpperCase())}</span>
+                    <i class="fas ${product.icon}"></i>
                     ${matchPct >= 80 ? `<span class="match-badge">${matchPct}% Match</span>` : ''}
                     ${savings > 0 ? `<span class="deal-badge">Save $${savings}</span>` : ''}
                 </div>
