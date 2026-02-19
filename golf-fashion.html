@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Style Finder | Find Your Perfect Golf Look</title>
+    <link rel="stylesheet" href="golf-fashion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="golf-fashion.html"><i class="fas fa-golf-ball-tee"></i> Golf Style Finder</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-restart">Start Over</a></li>
+                    <li><a href="#" id="nav-about">How It Works</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-steps">
+            <div class="progress-step active" data-step="1">
+                <div class="step-circle">1</div>
+                <span>Priorities</span>
+            </div>
+            <div class="progress-step" data-step="2">
+                <div class="step-circle">2</div>
+                <span>Fit</span>
+            </div>
+            <div class="progress-step" data-step="3">
+                <div class="step-circle">3</div>
+                <span>Style</span>
+            </div>
+            <div class="progress-step" data-step="4">
+                <div class="step-circle">4</div>
+                <span>Activity</span>
+            </div>
+            <div class="progress-step" data-step="5">
+                <div class="step-circle">5</div>
+                <span>Category</span>
+            </div>
+            <div class="progress-step" data-step="6">
+                <div class="step-circle">6</div>
+                <span>Results</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main App Container -->
+    <main class="app-main">
+
+        <!-- Step 1: Priorities -->
+        <section class="wizard-step active" id="step-1">
+            <div class="container">
+                <div class="step-header">
+                    <h1>What matters most to you?</h1>
+                    <p>Drag to rank your priorities from most important (top) to least important (bottom). This helps us find gear that fits your values.</p>
+                </div>
+                <div class="priority-ranker" id="priorityRanker">
+                    <div class="priority-item" draggable="true" data-priority="price">
+                        <div class="priority-handle"><i class="fas fa-grip-vertical"></i></div>
+                        <div class="priority-icon"><i class="fas fa-tag"></i></div>
+                        <div class="priority-info">
+                            <h3>Price</h3>
+                            <p>Best value for the budget. Finding deals and affordable options without overspending.</p>
+                        </div>
+                        <div class="priority-rank">#1</div>
+                    </div>
+                    <div class="priority-item" draggable="true" data-priority="quality">
+                        <div class="priority-handle"><i class="fas fa-grip-vertical"></i></div>
+                        <div class="priority-icon"><i class="fas fa-gem"></i></div>
+                        <div class="priority-info">
+                            <h3>Quality</h3>
+                            <p>Premium materials and construction. Clothing that looks sharp and lasts season after season.</p>
+                        </div>
+                        <div class="priority-rank">#2</div>
+                    </div>
+                    <div class="priority-item" draggable="true" data-priority="performance">
+                        <div class="priority-handle"><i class="fas fa-grip-vertical"></i></div>
+                        <div class="priority-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="priority-info">
+                            <h3>Performance</h3>
+                            <p>Engineered for the course. Moisture-wicking, stretch fabric, UV protection, and athletic fit.</p>
+                        </div>
+                        <div class="priority-rank">#3</div>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="btn primary-btn next-btn" data-next="2">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Fit Profile -->
+        <section class="wizard-step" id="step-2">
+            <div class="container">
+                <div class="step-header">
+                    <h1>Let's find your fit</h1>
+                    <p>Tell us about yourself so we can recommend the right sizes and cuts.</p>
+                </div>
+                <div class="fit-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Gender</label>
+                            <div class="option-cards" data-field="gender">
+                                <div class="option-card" data-value="mens">
+                                    <i class="fas fa-mars"></i>
+                                    <span>Men's</span>
+                                </div>
+                                <div class="option-card" data-value="womens">
+                                    <i class="fas fa-venus"></i>
+                                    <span>Women's</span>
+                                </div>
+                                <div class="option-card" data-value="unisex">
+                                    <i class="fas fa-genderless"></i>
+                                    <span>Unisex</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row two-col">
+                        <div class="form-field">
+                            <label for="height">Height</label>
+                            <div class="input-group">
+                                <select id="heightFeet" class="form-select">
+                                    <option value="">Feet</option>
+                                    <option value="4">4'</option>
+                                    <option value="5">5'</option>
+                                    <option value="6">6'</option>
+                                    <option value="7">7'</option>
+                                </select>
+                                <select id="heightInches" class="form-select">
+                                    <option value="">Inches</option>
+                                    <option value="0">0"</option>
+                                    <option value="1">1"</option>
+                                    <option value="2">2"</option>
+                                    <option value="3">3"</option>
+                                    <option value="4">4"</option>
+                                    <option value="5">5"</option>
+                                    <option value="6">6"</option>
+                                    <option value="7">7"</option>
+                                    <option value="8">8"</option>
+                                    <option value="9">9"</option>
+                                    <option value="10">10"</option>
+                                    <option value="11">11"</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="weight">Weight (lbs)</label>
+                            <input type="number" id="weight" class="form-input" placeholder="e.g. 180" min="80" max="400">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Preferred Fit</label>
+                            <div class="option-cards" data-field="fit">
+                                <div class="option-card" data-value="athletic">
+                                    <i class="fas fa-person-running"></i>
+                                    <span>Athletic / Slim</span>
+                                    <small>Tapered, close to body</small>
+                                </div>
+                                <div class="option-card" data-value="regular">
+                                    <i class="fas fa-person-walking"></i>
+                                    <span>Regular</span>
+                                    <small>Standard comfortable fit</small>
+                                </div>
+                                <div class="option-card" data-value="relaxed">
+                                    <i class="fas fa-person"></i>
+                                    <span>Relaxed</span>
+                                    <small>Generous room throughout</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="btn secondary-btn prev-btn" data-prev="1"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="btn primary-btn next-btn" data-next="3">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Style Preferences -->
+        <section class="wizard-step" id="step-3">
+            <div class="container">
+                <div class="step-header">
+                    <h1>What's your style on the course?</h1>
+                    <p>Select the aesthetic that best matches your vibe. Pick one or multiple.</p>
+                </div>
+                <div class="style-grid" data-field="style">
+                    <div class="style-card" data-value="classic">
+                        <div class="style-visual classic-visual">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Classic / Traditional</h3>
+                        <p>Timeless polo-and-slacks look. Think Augusta, clean lines, and refined colors.</p>
+                        <div class="style-colors">
+                            <span class="color-dot" style="background:#1a3a5c"></span>
+                            <span class="color-dot" style="background:#ffffff"></span>
+                            <span class="color-dot" style="background:#8b4513"></span>
+                            <span class="color-dot" style="background:#2d5016"></span>
+                        </div>
+                    </div>
+                    <div class="style-card" data-value="modern">
+                        <div class="style-visual modern-visual">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Modern / Trendy</h3>
+                        <p>Contemporary golf fashion. Slim fits, neutral tones, and elevated street-style influence.</p>
+                        <div class="style-colors">
+                            <span class="color-dot" style="background:#333333"></span>
+                            <span class="color-dot" style="background:#c9b99a"></span>
+                            <span class="color-dot" style="background:#5c6b73"></span>
+                            <span class="color-dot" style="background:#f5f0e8"></span>
+                        </div>
+                    </div>
+                    <div class="style-card" data-value="athletic">
+                        <div class="style-visual athletic-visual">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Athletic / Sporty</h3>
+                        <p>Performance-first gear. Stretch fabrics, moisture management, and sport-tech looks.</p>
+                        <div class="style-colors">
+                            <span class="color-dot" style="background:#0057b8"></span>
+                            <span class="color-dot" style="background:#ff4444"></span>
+                            <span class="color-dot" style="background:#222222"></span>
+                            <span class="color-dot" style="background:#00b894"></span>
+                        </div>
+                    </div>
+                    <div class="style-card" data-value="bold">
+                        <div class="style-visual bold-visual">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Bold / Statement</h3>
+                        <p>Stand out on the course. Loud patterns, vibrant colors, and unique prints.</p>
+                        <div class="style-colors">
+                            <span class="color-dot" style="background:#ff6b35"></span>
+                            <span class="color-dot" style="background:#f72585"></span>
+                            <span class="color-dot" style="background:#7209b7"></span>
+                            <span class="color-dot" style="background:#ffd60a"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="btn secondary-btn prev-btn" data-prev="2"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="btn primary-btn next-btn" data-next="4">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Athletic / Activity Requirements -->
+        <section class="wizard-step" id="step-4">
+            <div class="container">
+                <div class="step-header">
+                    <h1>How do you play?</h1>
+                    <p>Your on-course activity shapes what fabrics and features work best.</p>
+                </div>
+                <div class="activity-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>How do you get around the course?</label>
+                            <div class="option-cards" data-field="transport">
+                                <div class="option-card" data-value="walk">
+                                    <i class="fas fa-person-walking"></i>
+                                    <span>Walk</span>
+                                    <small>Need breathable, lightweight gear</small>
+                                </div>
+                                <div class="option-card" data-value="cart">
+                                    <i class="fas fa-car-side"></i>
+                                    <span>Cart</span>
+                                    <small>Comfort is key</small>
+                                </div>
+                                <div class="option-card" data-value="both">
+                                    <i class="fas fa-shuffle"></i>
+                                    <span>Both</span>
+                                    <small>Versatile all-around gear</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>What weather do you typically play in? (Select all that apply)</label>
+                            <div class="option-cards multi-select" data-field="weather">
+                                <div class="option-card" data-value="hot">
+                                    <i class="fas fa-sun"></i>
+                                    <span>Hot / Humid</span>
+                                </div>
+                                <div class="option-card" data-value="mild">
+                                    <i class="fas fa-cloud-sun"></i>
+                                    <span>Mild / Temperate</span>
+                                </div>
+                                <div class="option-card" data-value="cold">
+                                    <i class="fas fa-snowflake"></i>
+                                    <span>Cool / Cold</span>
+                                </div>
+                                <div class="option-card" data-value="rain">
+                                    <i class="fas fa-cloud-rain"></i>
+                                    <span>Rainy / Wet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>How important is swing flexibility?</label>
+                            <div class="range-slider">
+                                <input type="range" id="flexibility" min="1" max="5" value="3" class="slider">
+                                <div class="range-labels">
+                                    <span>Not a concern</span>
+                                    <span>Somewhat</span>
+                                    <span>Critical</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Any special feature needs? (Select all that apply)</label>
+                            <div class="option-cards multi-select small-cards" data-field="features">
+                                <div class="option-card" data-value="uv">
+                                    <i class="fas fa-shield-halved"></i>
+                                    <span>UV Protection</span>
+                                </div>
+                                <div class="option-card" data-value="moisture">
+                                    <i class="fas fa-droplet"></i>
+                                    <span>Moisture Wicking</span>
+                                </div>
+                                <div class="option-card" data-value="stretch">
+                                    <i class="fas fa-expand"></i>
+                                    <span>4-Way Stretch</span>
+                                </div>
+                                <div class="option-card" data-value="pockets">
+                                    <i class="fas fa-box-open"></i>
+                                    <span>Extra Pockets</span>
+                                </div>
+                                <div class="option-card" data-value="waterproof">
+                                    <i class="fas fa-umbrella"></i>
+                                    <span>Waterproof</span>
+                                </div>
+                                <div class="option-card" data-value="odor">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Odor Resistant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="btn secondary-btn prev-btn" data-prev="3"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="btn primary-btn next-btn" data-next="5">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 5: Category Selection -->
+        <section class="wizard-step" id="step-5">
+            <div class="container">
+                <div class="step-header">
+                    <h1>What are you shopping for?</h1>
+                    <p>Select the categories you want recommendations for.</p>
+                </div>
+                <div class="category-grid" data-field="categories">
+                    <div class="category-card" data-value="polos">
+                        <div class="category-icon"><i class="fas fa-shirt"></i></div>
+                        <h3>Polos</h3>
+                        <p>The golf essential</p>
+                    </div>
+                    <div class="category-card" data-value="pants">
+                        <div class="category-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Pants</h3>
+                        <p>Full-length bottoms</p>
+                    </div>
+                    <div class="category-card" data-value="shorts">
+                        <div class="category-icon"><i class="fas fa-scissors"></i></div>
+                        <h3>Shorts</h3>
+                        <p>Warm weather staple</p>
+                    </div>
+                    <div class="category-card" data-value="outerwear">
+                        <div class="category-icon"><i class="fas fa-vest-patches"></i></div>
+                        <h3>Outerwear</h3>
+                        <p>Jackets, vests & layers</p>
+                    </div>
+                    <div class="category-card" data-value="shoes">
+                        <div class="category-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h3>Shoes</h3>
+                        <p>Spikes & spikeless</p>
+                    </div>
+                    <div class="category-card" data-value="hats">
+                        <div class="category-icon"><i class="fas fa-hat-cowboy"></i></div>
+                        <h3>Hats</h3>
+                        <p>Caps, visors & buckets</p>
+                    </div>
+                    <div class="category-card" data-value="baselayers">
+                        <div class="category-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Base Layers</h3>
+                        <p>Under-shirt performance</p>
+                    </div>
+                    <div class="category-card" data-value="accessories">
+                        <div class="category-icon"><i class="fas fa-mitten"></i></div>
+                        <h3>Accessories</h3>
+                        <p>Gloves, belts & socks</p>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="btn secondary-btn prev-btn" data-prev="4"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="btn primary-btn next-btn" id="findResultsBtn" data-next="6">Find My Gear <i class="fas fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 6: Results -->
+        <section class="wizard-step" id="step-6">
+            <div class="container">
+                <div class="step-header">
+                    <h1>Your Personalized Picks</h1>
+                    <p id="results-summary"></p>
+                </div>
+
+                <!-- Profile Summary Card -->
+                <div class="profile-summary" id="profileSummary">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- Results Controls -->
+                <div class="results-controls">
+                    <div class="results-sort">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy" class="form-select">
+                            <option value="best-match">Best Match</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                    <div class="results-count" id="resultsCount"></div>
+                </div>
+
+                <!-- Results Grid -->
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Populated by JS -->
+                </div>
+
+                <div class="step-actions">
+                    <button class="btn secondary-btn prev-btn" data-prev="5"><i class="fas fa-arrow-left"></i> Refine Selections</button>
+                    <button class="btn primary-btn" id="restartBtn">Start Over <i class="fas fa-rotate-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golf Style Finder | Built by Doug Kim</p>
+        </div>
+    </footer>
+
+    <script src="golf-fashion.js"></script>
+</body>
+</html>
