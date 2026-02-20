@@ -949,12 +949,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const hasDeal = product.maxPrice > bestPrice;
             const savings = hasDeal ? product.maxPrice - bestPrice : 0;
 
-            // Stars
+            // Stars (using Unicode for reliability)
             const fullStars = Math.floor(product.rating);
             const halfStar = product.rating % 1 >= 0.3;
             let starsHtml = '';
-            for (let i = 0; i < fullStars; i++) starsHtml += '<i class="fas fa-star"></i>';
-            if (halfStar) starsHtml += '<i class="fas fa-star-half-alt"></i>';
+            for (let i = 0; i < fullStars; i++) starsHtml += '&#9733;';
+            if (halfStar) starsHtml += '&#9734;';
 
             // Features with match highlighting
             const featureTags = product.features.map(f => {
@@ -966,17 +966,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const sortedPrices = [...product.prices].sort((a, b) => a.price - b.price);
             const retailerHtml = sortedPrices.map((p, i) => {
                 const isBest = i === 0 && hasDeal;
-                return `<a href="${encodeURI(p.url)}" target="_blank" rel="noopener noreferrer" class="retailer-link${isBest ? ' best-deal' : ''}">
+                return `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="retailer-link${isBest ? ' best-deal' : ''}">
                     <span class="retailer-name">${escapeHtml(p.retailer)}</span>
-                    <span><span class="retailer-price">$${p.price}</span> <i class="fas fa-external-link-alt"></i></span>
+                    <span class="retailer-price-wrap"><span class="retailer-price">$${p.price}</span> &#8599;</span>
                 </a>`;
             }).join('');
 
+            // Generate inline SVG product image
+            const productImgSrc = generateProductImage(product);
+
             return `<div class="product-card">
-                <div class="product-image" style="background:${product.gradient}">
-                    <i class="fas ${product.icon} product-img-icon"></i>
-                    <div class="product-img-brand">${escapeHtml(product.brand)}</div>
-                    <div class="product-img-name">${escapeHtml(product.name)}</div>
+                <div class="product-image">
+                    <img src="${productImgSrc}" alt="${escapeHtml(product.brand)} ${escapeHtml(product.name)}" width="400" height="280" />
                     ${matchPct >= 80 ? `<span class="match-badge">${matchPct}% Match</span>` : ''}
                     ${savings > 0 ? `<span class="deal-badge">Save $${savings}</span>` : ''}
                 </div>
@@ -998,6 +999,50 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             </div>`;
         }).join('');
+    }
+
+    // ── Product Image Generator ────────────────
+    const CATEGORY_ICONS = {
+        polos: 'M12 2C9.24 2 7 4.24 7 7v3H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-1V7c0-2.76-2.24-5-5-5zm0 2c1.65 0 3 1.35 3 3v3H9V7c0-1.65 1.35-3 3-3z',
+        pants: 'M4 2h16v4l-3 14H7L4 6V2zm2 2v1.5l2.5 12.5h7L18 5.5V4H6z',
+        shorts: 'M4 4h16v4l-2 8H6L4 8V4zm2 2v1.5L8 14h8l2-6.5V6H6z',
+        outerwear: 'M12 2L6 7v2H4v11h7v-5h2v5h7V9h-2V7l-6-5zm0 2.5L16 8v1H8V8l4-3.5z',
+        shoes: 'M2 18h20v2H2v-2zm2-4l4-8h8l4 8v2H4v-2zm5-6l-2.5 5h11L17 8h-8z',
+        hats: 'M12 2C8 2 4 5 4 9c0 2 1 3.5 2.5 4.5L6 16h12l-.5-2.5C19 12.5 20 11 20 9c0-4-4-7-8-7z',
+        baselayers: 'M12 2C9.24 2 7 4.24 7 7v13h10V7c0-2.76-2.24-5-5-5zm0 2c1.65 0 3 1.35 3 3v11H9V7c0-1.65 1.35-3 3-3z',
+        accessories: 'M12 2a7 7 0 00-7 7c0 2.5 1.3 4.7 3.3 6L7 22h10l-1.3-7c2-1.3 3.3-3.5 3.3-6a7 7 0 00-7-7z'
+    };
+
+    function generateProductImage(product) {
+        const gradMatch = product.gradient.match(/#([0-9a-f]{6})/gi) || ['#1a1a2e', '#16213e'];
+        const c1 = gradMatch[0] || '#1a1a2e';
+        const c2 = gradMatch[1] || '#16213e';
+        const initials = product.brand.substring(0, 2).toUpperCase();
+        const iconPath = CATEGORY_ICONS[product.category] || CATEGORY_ICONS.polos;
+
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+            <defs>
+                <linearGradient id="bg-${product.id}" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="${c1}"/>
+                    <stop offset="100%" stop-color="${c2}"/>
+                </linearGradient>
+                <linearGradient id="shine-${product.id}" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                </linearGradient>
+            </defs>
+            <rect width="400" height="280" fill="url(#bg-${product.id})"/>
+            <rect width="400" height="280" fill="url(#shine-${product.id})"/>
+            <text x="200" y="105" text-anchor="middle" fill="rgba(255,255,255,0.08)" font-size="120" font-weight="900" font-family="Arial,sans-serif">${initials}</text>
+            <g transform="translate(176, 70) scale(2)" fill="rgba(255,255,255,0.85)">
+                <path d="${iconPath}"/>
+            </g>
+            <text x="200" y="190" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="11" font-weight="700" font-family="Arial,sans-serif" letter-spacing="4">${product.brand.toUpperCase()}</text>
+            <text x="200" y="215" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-size="15" font-weight="600" font-family="Arial,sans-serif">${product.name.length > 35 ? product.name.substring(0, 32) + '...' : product.name}</text>
+            <rect x="0" y="240" width="400" height="40" fill="rgba(0,0,0,0.25)"/>
+        </svg>`;
+
+        return 'data:image/svg+xml,' + encodeURIComponent(svg);
     }
 
     // ── Utilities ─────────────────────────────
