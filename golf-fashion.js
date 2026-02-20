@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-shirt',
             prices: [
-                { retailer: 'Callaway Golf', price: 60, url: 'https://www.callawaygolf.com/search?q=swing+tech+polo' },
+                { retailer: 'Callaway Golf', price: 60, url: 'https://www.callawaygolf.com/search-results?q=swing+tech+polo' },
                 { retailer: 'Amazon', price: 42, url: 'https://www.amazon.com/s?k=callaway+swing+tech+polo' },
                 { retailer: 'Dick\'s Sporting Goods', price: 50, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+shirts' }
             ]
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-scissors',
             prices: [
-                { retailer: 'Callaway Golf', price: 50, url: 'https://www.callawaygolf.com/search?q=everplay+shorts' },
+                { retailer: 'Callaway Golf', price: 50, url: 'https://www.callawaygolf.com/search-results?q=everplay+shorts' },
                 { retailer: 'Amazon', price: 35, url: 'https://www.amazon.com/s?k=callaway+everplay+golf+shorts' },
                 { retailer: 'Dick\'s Sporting Goods', price: 40, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+shorts' }
             ]
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gradient: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
             icon: 'fa-hat-cowboy',
             prices: [
-                { retailer: 'Callaway Golf', price: 26, url: 'https://www.callawaygolf.com/search?q=performance+pro+hat' },
+                { retailer: 'Callaway Golf', price: 26, url: 'https://www.callawaygolf.com/search-results?q=performance+pro+hat' },
                 { retailer: 'Amazon', price: 18, url: 'https://www.amazon.com/s?k=callaway+performance+pro+golf+hat' },
                 { retailer: 'Dick\'s Sporting Goods', price: 22, url: 'https://www.dickssportinggoods.com/search?searchTerm=callaway+golf+hats' }
             ]
@@ -974,8 +974,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             return `<div class="product-card">
                 <div class="product-image" style="background:${product.gradient}">
-                    <span class="brand-initial">${escapeHtml(product.brand.substring(0, 2).toUpperCase())}</span>
-                    <i class="fas ${product.icon}"></i>
+                    <i class="fas ${product.icon} product-img-icon"></i>
+                    <div class="product-img-brand">${escapeHtml(product.brand)}</div>
+                    <div class="product-img-name">${escapeHtml(product.name)}</div>
                     ${matchPct >= 80 ? `<span class="match-badge">${matchPct}% Match</span>` : ''}
                     ${savings > 0 ? `<span class="deal-badge">Save $${savings}</span>` : ''}
                 </div>
